@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Land Rover";
+    src: url("../assets/fonts/LandRoverOT4-Light.woff") format("woff2"),
+        url("../assets/fonts/LandRoverOT4-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Land Rover";
+    src: url("../assets/fonts/LandRoverOT4-Medium.woff2") format("woff2"),
+        url("../assets/fonts/LandRoverOT4-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Land Rover";
+    src: url("../assets/fonts/LandRoverOT4-Bold.woff2") format("woff2"),
+        url("../assets/fonts/LandRoverOT4-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-ma-grey-tint;
+    }
+
+    html,
+    p {
+        font-family: "Land Rover";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Land Rover";
+    }
+
+    h1 {
+        @apply text-4xl lg:text-7xl leading-tight lg:leading-tight text-ma-black;
+    }
+
+    h2 {
+        @apply text-2xl lg:text-4xl leading-tight lg:leading-tight text-ma-black;
+    }
+
+    h3 {
+        @apply text-xl lg:text-3xl leading-tight lg:leading-tight text-ma-black;
+    }
+
+    p {
+        @apply text-base lg:text-xl font-light;
+    }
+}
