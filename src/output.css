@@ -444,15 +444,6 @@ video {
   display: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 236 233 / var(--tw-bg-opacity));
-}
-
 html,
     p {
   font-family: "Land Rover";
@@ -664,6 +655,10 @@ p {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -678,6 +673,14 @@ p {
 
 .top-0 {
   top: 0px;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .-ml-4 {
@@ -796,6 +799,11 @@ p {
   background-color: rgb(17 17 14 / var(--tw-bg-opacity));
 }
 
+.bg-ma-grey-tint {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 236 233 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -844,6 +852,10 @@ p {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[69px\] {
+  padding-top: 69px;
 }
 
 .text-center {
@@ -1000,6 +1012,26 @@ p {
     .swiper-button-prev:after {
     font-size: 28px !important;
   }
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 .hover\:text-ma-grey:hover {

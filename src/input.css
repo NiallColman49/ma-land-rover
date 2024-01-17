@@ -27,14 +27,6 @@
 }
 
 @layer base {
-    html {
-        @apply scroll-smooth;
-    }
-
-    body {
-        @apply bg-ma-grey-tint;
-    }
-
     html,
     p {
         font-family: "Land Rover";
@@ -136,4 +128,24 @@
     .swiper-button-prev:after {
         font-size: 28px !important;
     }
+}
+
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
 }
