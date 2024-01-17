@@ -64,3 +64,76 @@
         @apply text-base lg:text-xl font-light;
     }
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 450px;
+}
+
+.swiper-scrollbar-horizontal {
+    position: relative !important;
+    margin-top: 20px !important;
+    width: calc(100% - 80px) !important;
+    left: 0 !important;
+    height: 2px !important;
+}
+
+.swiper-scrollbar {
+    background: RGBA(129, 130, 128, 0.5) !important;
+}
+
+@media screen and (max-width: 640px) {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        margin-top: 4px !important;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        margin-top: 8px !important;
+    }
+}
+
+.swiper-scrollbar-drag {
+    background: #11110e !important;
+    height: 4px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #11110e !important;
+}
+
+@media screen and (max-width: 640px) {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 28px !important;
+    }
+}
